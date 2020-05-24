@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "shot_crossbow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "#minecraft:arrows"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {"function": "ench_limit_break:advancements/hit_mob"}
+}
