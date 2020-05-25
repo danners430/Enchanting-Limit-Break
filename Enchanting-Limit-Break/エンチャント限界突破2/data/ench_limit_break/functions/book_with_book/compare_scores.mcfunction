@@ -1,4 +1,4 @@
-#アイテムのエンチャスコア = 本のエンチャスコア　の場合、アイテムのエンチャスコア +1
+#最初に投げた本のエンチャスコア = 次に投げた本のエンチャスコア　の場合、アイテムのエンチャスコア +1
 execute if score @s BaneOfArthropods = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BaneOfArthropods if score @s BaneOfArthropods matches ..10 run scoreboard players add @s BaneOfArthropods 1
 execute if score @s BlastProtection = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BlastProtection if score @s BlastProtection matches ..10 run scoreboard players add @s BlastProtection 1
 execute if score @s Efficiency = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Efficiency if score @s Efficiency matches ..10 run scoreboard players add @s Efficiency 1
@@ -35,7 +35,7 @@ execute if score @s Mending = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=
 execute if score @s Multishot = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Multishot if score @s Multishot matches ..1 run scoreboard players add @s Multishot 1
 execute if score @s SilkTouch = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] SilkTouch if score @s SilkTouch matches ..1 run scoreboard players add @s SilkTouch 1
 
-#アイテムのエンチャスコア < 本のエンチャスコア　の場合、本のエンチャスコアで上書き
+#最初に投げた本のエンチャスコア < 次に投げた本のエンチャスコア　の場合、本のエンチャスコアで上書き
 execute if score @s BaneOfArthropods < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BaneOfArthropods if score @s BaneOfArthropods matches ..10 run scoreboard players operation @s BaneOfArthropods = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BaneOfArthropods
 execute if score @s BlastProtection < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BlastProtection if score @s BlastProtection matches ..10 run scoreboard players operation @s BlastProtection = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] BlastProtection
 execute if score @s Efficiency < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Efficiency if score @s Efficiency matches ..10 run scoreboard players operation @s Efficiency = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Efficiency
