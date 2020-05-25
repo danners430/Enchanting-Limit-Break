@@ -72,4 +72,5 @@ execute if score @s Mending < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=
 execute if score @s Multishot < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Multishot if score @s Multishot matches ..1 run scoreboard players operation @s Multishot = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] Multishot
 execute if score @s SilkTouch < @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] SilkTouch if score @s SilkTouch matches ..1 run scoreboard players operation @s SilkTouch = @e[nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,distance=0.001..1,limit=1] SilkTouch
 
+#次の反応
 function ench_limit_break:book_with_book/rewrite_ench
