@@ -1,3 +1,6 @@
+#エンチャントのレベルをスコア化
+#これを全部のエンチャントでやる
+#最初に投げたアイテム
 execute store result score @s[tag=SwordEnch] BaneOfArthropods run data get entity @s Item.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}].lvl
 execute store result score @s[tag=ArmorEnch] BlastProtection run data get entity @s Item.tag.Enchantments[{id:"minecraft:blast_protection"}].lvl
 execute store result score @s[tag=ToolEnch] Efficiency run data get entity @s Item.tag.Enchantments[{id:"minecraft:efficiency"}].lvl
@@ -37,6 +40,7 @@ execute store result score @s[tag=MiscEnch] Mending run data get entity @s Item.
 execute store result score @s[tag=CrossbowEnch] Multishot run data get entity @s Item.tag.Enchantments[{id:"minecraft:multishot"}].lvl
 execute store result score @s[tag=ToolEnch] SilkTouch run data get entity @s Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl
 
+#2番目に投げたアイテム
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:bane_of_arthropods"}]}}}] BaneOfArthropods run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:bane_of_arthropods"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:blast_protection"}]}}}] BlastProtection run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:blast_protection"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:efficiency"}]}}}] Efficiency run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:efficiency"}].lvl
@@ -75,4 +79,5 @@ execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscE
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:multishot"}]}}}] Multishot run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:multishot"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:silk_touch"}]}}}] SilkTouch run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:silk_touch"}].lvl
 
+#反応開始
 function ench_limit_break:item_with_book/compare_scores
