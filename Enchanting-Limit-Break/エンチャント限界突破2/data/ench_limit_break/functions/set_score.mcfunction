@@ -34,3 +34,4 @@ scoreboard objectives add Mending dummy
 scoreboard objectives add Multishot dummy
 scoreboard objectives add SilkTouch dummy
 scoreboard objectives add CheckItems dummy
+scoreboard objectives add TridentThrown minecraft.used:minecraft.trident "ThrownTrident"

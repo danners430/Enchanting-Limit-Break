@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ench_limit_break:start"
+    "ench_limit_break:start",
+    "ench_limit_break:trident_sharpness_ready"
   ]
 }
