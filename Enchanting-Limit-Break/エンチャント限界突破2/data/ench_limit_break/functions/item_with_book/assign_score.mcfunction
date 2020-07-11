@@ -21,6 +21,7 @@ execute store result score @s[tag=BowEnch] Punch run data get entity @s Item.tag
 execute store result score @s[tag=CrossbowEnch] QuickCharge run data get entity @s Item.tag.Enchantments[{id:"minecraft:quick_charge"}].lvl
 execute store result score @s[tag=HelmetEnch] Respiration run data get entity @s Item.tag.Enchantments[{id:"minecraft:respiration"}].lvl
 execute store result score @s[tag=SwordEnch] Sharpness run data get entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}].lvl
+execute store result score @s[tag=TridentEnch] Sharpness run data get entity @s Item.tag.Enchantments[{id:"minecraft:sharpness"}].lvl
 execute store result score @s[tag=SwordEnch] Smite run data get entity @s Item.tag.Enchantments[{id:"minecraft:smite"}].lvl
 execute store result score @s[tag=ArmorEnch] Thorns run data get entity @s Item.tag.Enchantments[{id:"minecraft:thorns"}].lvl
 execute store result score @s[tag=MiscEnch] Unbreaking run data get entity @s Item.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
