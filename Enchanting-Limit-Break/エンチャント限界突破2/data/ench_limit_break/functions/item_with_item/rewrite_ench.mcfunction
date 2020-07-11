@@ -95,6 +95,7 @@ execute as @s[tag=BowEnch] if score @s Punch matches 0 if entity @e[nbt={Item:{t
 execute as @s[tag=CrossbowEnch] if score @s QuickCharge matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:quick_charge"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=HelmetEnch] if score @s Respiration matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:respiration"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=SwordEnch] if score @s Sharpness matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:sharpness"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
+execute as @s[tag=TridentEnch] if score @s Sharpness matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:sharpness"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=SwordEnch] if score @s Smite matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:smite"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=ArmorEnch] if score @s Thorns matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:thorns"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=MiscEnch] if score @s Unbreaking matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:unbreaking"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
