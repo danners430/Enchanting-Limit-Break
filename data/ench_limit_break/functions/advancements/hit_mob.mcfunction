@@ -1,2 +1,0 @@
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{id:"minecraft:flame"}]}}}] at @e[type=arrow,nbt={life:0s}] run playsound minecraft:entity.player.hurt_on_fire master @a ~ ~ ~ 0.5 1
-advancement revoke @s only ench_limit_break:crossbow_flame_hit
