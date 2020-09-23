@@ -29,12 +29,13 @@ execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:riptid
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:riptide"}].lvl short 1 unless score @s Channeling matches 1.. if score @s Riptide matches 1..3 run scoreboard players get @s Riptide
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:sweeping"}].lvl short 1 if score @s Sweeping matches 1..3 run scoreboard players get @s Sweeping
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:aqua_affinity"}].lvl short 1 if score @s AquaAffinity matches 1 run scoreboard players get @s AquaAffinity
-execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:channeling"}].lvl short 1 unless score @s Riptide matches 1.. if score @s Channeling matches ..2 run scoreboard players get @s Channeling
+execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:channeling"}].lvl short 1 unless score @s Riptide matches 1.. if score @s Channeling matches 1..2 run scoreboard players get @s Channeling
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:flame"}].lvl short 1 if score @s Flame matches 1 run scoreboard players get @s Flame
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:infinity"}].lvl short 1 if score @s Infinity matches 1 run scoreboard players get @s Infinity
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:mending"}].lvl short 1 if score @s Mending matches 1 run scoreboard players get @s Mending
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:multishot"}].lvl short 1 if score @s Multishot matches 1 run scoreboard players get @s Multishot
 execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:silk_touch"}].lvl short 1 if score @s SilkTouch matches 1 run scoreboard players get @s SilkTouch
+execute store result entity @s Item.tag.StoredEnchantments[{id:"minecraft:soul_speed"}].lvl short 1 if score @s SoulSpeed matches 1..10 run scoreboard players get @s SoulSpeed
 
 scoreboard players reset * BaneOfArthropods
 scoreboard players reset * BlastProtection
@@ -71,6 +72,7 @@ scoreboard players reset * Infinity
 scoreboard players reset * Mending
 scoreboard players reset * Multishot
 scoreboard players reset * SilkTouch
+scoreboard players reset * SoulSpeed
 
 execute as @e[tag=ench_to] at @s run function ench_limit_break:success
 execute as @s[tag=ench_to] run kill @e[nbt={Item:{tag:{StoredEnchantments:[{}]}}},limit=1,sort=nearest,distance=..1,tag=!ench_to]

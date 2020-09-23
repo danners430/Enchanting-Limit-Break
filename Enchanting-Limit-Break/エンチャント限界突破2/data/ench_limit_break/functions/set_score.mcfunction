@@ -33,5 +33,8 @@ scoreboard objectives add Infinity dummy
 scoreboard objectives add Mending dummy
 scoreboard objectives add Multishot dummy
 scoreboard objectives add SilkTouch dummy
+scoreboard objectives add SoulSpeed dummy
 scoreboard objectives add CheckItems dummy
 scoreboard objectives add TridentThrown minecraft.used:minecraft.trident "ThrownTrident"
+scoreboard objectives add Walked minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm

@@ -40,6 +40,7 @@ execute store result score @s[tag=CrossbowEnch] Infinity run data get entity @s 
 execute store result score @s[tag=MiscEnch] Mending run data get entity @s Item.tag.Enchantments[{id:"minecraft:mending"}].lvl
 execute store result score @s[tag=CrossbowEnch] Multishot run data get entity @s Item.tag.Enchantments[{id:"minecraft:multishot"}].lvl
 execute store result score @s[tag=ToolEnch] SilkTouch run data get entity @s Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl
+execute store result score @s[tag=BootsEnch] SoulSpeed run data get entity @s Item.tag.Enchantments[{id:"minecraft:soul_speed"}].lvl
 
 #2番目に投げたアイテム
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:bane_of_arthropods"}]}}}] BaneOfArthropods run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:bane_of_arthropods"}].lvl
@@ -79,6 +80,7 @@ execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscE
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:mending"}]}}}] Mending run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:mending"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:multishot"}]}}}] Multishot run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:multishot"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:silk_touch"}]}}}] SilkTouch run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:silk_touch"}].lvl
+execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:soul_speed"}]}}}] SoulSpeed run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:soul_speed"}].lvl
 
 #反応開始
 function ench_limit_break:item_with_book/compare_scores

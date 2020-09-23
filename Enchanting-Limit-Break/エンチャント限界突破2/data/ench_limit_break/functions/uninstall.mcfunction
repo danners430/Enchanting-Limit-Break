@@ -33,4 +33,5 @@ scoreboard objectives remove Infinity
 scoreboard objectives remove Mending
 scoreboard objectives remove Multishot
 scoreboard objectives remove SilkTouch
+scoreboard objectives remove SoulSpeed
 scoreboard objectives remove CheckItems

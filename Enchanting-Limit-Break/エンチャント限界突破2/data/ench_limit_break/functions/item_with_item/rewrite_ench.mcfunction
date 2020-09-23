@@ -74,6 +74,8 @@ execute store result entity @s Item.tag.Enchantments[{id:"minecraft:multishot"}]
 execute if data entity @s[tag=!Enchanted] Item.tag.Enchantments[{id:"minecraft:multishot"}] if score @s Multishot matches 1 run tag @s add Enchanted
 execute store result entity @s Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl short 1 if score @s SilkTouch matches 1 run scoreboard players get @s SilkTouch
 execute if data entity @s[tag=!Enchanted] Item.tag.Enchantments[{id:"minecraft:silk_touch"}] if score @s SilkTouch matches 1 run tag @s add Enchanted
+execute store result entity @s Item.tag.Enchantments[{id:"minecraft:soul_speed"}].lvl short 1 if score @s SoulSpeed matches 1 run scoreboard players get @s SoulSpeed
+execute if data entity @s[tag=!Enchanted] Item.tag.Enchantments[{id:"minecraft:soul_speed"}] if score @s SoulSpeed matches 1 run tag @s add Enchanted
 
 execute as @s[tag=SwordEnch] if score @s BaneOfArthropods matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:bane_of_arthropods"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=ArmorEnch] if score @s BlastProtection matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:blast_protection"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
@@ -114,6 +116,7 @@ execute as @s[tag=CrossbowEnch] if score @s Infinity matches 0 if entity @e[nbt=
 execute as @s[tag=MiscEnch] if score @s Mending matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:mending"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=CrossbowEnch] if score @s Multishot matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:multishot"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=ToolEnch] if score @s SilkTouch matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
+execute as @s[tag=ToolEnch] if score @s SoulSpeed matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:soul_speed"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 
 execute as @e[tag=Enchanted,tag=MiscEnch,tag=ench_item] at @s run function ench_limit_break:success
 execute as @s[tag=Enchanted,tag=MiscEnch,tag=ench_item] run kill @e[nbt={Item:{tag:{Enchantments:[{}]}}},limit=1,sort=nearest,distance=0.001..1,tag=!ench_item]
@@ -153,6 +156,7 @@ scoreboard players reset * Infinity
 scoreboard players reset * Mending
 scoreboard players reset * Multishot
 scoreboard players reset * SilkTouch
+scoreboard players reset * SoulSpeed
 scoreboard players reset * CheckItems
 
 execute if entity @s[nbt={Item:{tag:{Enchantments:[]}}}] run data remove entity @s Item.tag.Enchantments
