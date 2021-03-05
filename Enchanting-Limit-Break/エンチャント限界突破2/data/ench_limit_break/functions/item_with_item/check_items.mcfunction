@@ -57,5 +57,6 @@ execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_helmet"}},l
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_chestplate"}},limit=2] run scoreboard players set @s CheckItems 749
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_leggings"}},limit=2] run scoreboard players set @s CheckItems 750
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_boots"}},limit=2] run scoreboard players set @s CheckItems 751
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:netherite_sword"}},limit=2] run scoreboard players set @s CheckItems 743
 
 execute as @s if score @s CheckItems = @e[nbt=!{Item:{id:"minecraft:enchanted_book"}},distance=0.001..1,limit=1,sort=nearest] CheckItems run function ench_limit_break:item_with_item/tag_me
