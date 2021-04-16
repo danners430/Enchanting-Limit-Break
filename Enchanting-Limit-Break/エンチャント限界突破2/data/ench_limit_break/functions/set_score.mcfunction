@@ -38,3 +38,23 @@ scoreboard objectives add CheckItems dummy
 scoreboard objectives add TridentThrown minecraft.used:minecraft.trident "ThrownTrident"
 scoreboard objectives add Walked minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add Run minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add PowerBase dummy
+scoreboard objectives add PowerBase1000 dummy
+scoreboard objectives add PowerAmplifier dummy
+scoreboard objectives add Power10000 dummy
+scoreboard objectives add PowerLevel dummy
+scoreboard objectives add levelAdd dummy
+scoreboard objectives add levelAmp dummy
+scoreboard objectives add denominator dummy
+scoreboard objectives add BaseAdd dummy
+scoreboard objectives add ArrowPower dummy
+
+# Power enchantment arrow damage by 25% × (level + 1)
+# power = Base + Base100/1000/(25 * (Level + 1 ) )
+# Level + 1 = levelAdd
+# levelAdd * Amplifier = levelAmp
+# Power1000 / levelAmp = denominator
+# Base100/denominator = BaseAdd
+# Base + BaseAdd = ArrowPower
+# Set Power base score
+scoreboard players set Amplifier PowerAmplifier 25
