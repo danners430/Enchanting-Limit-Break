@@ -1,0 +1,25 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "Walked": {
+                    "min": 1,
+                    "max": 65535
+                }
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "Run": {
+                    "min": 1,
+                    "max": 65535
+                }
+            }
+        }
+    ]
+}
