@@ -1,0 +1,53 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:wooden_pickaxe\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:stone_pickaxe\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:iron_pickaxe\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:golden_pickaxe\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:diamond_pickaxe\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:netherite_pickaxe\"}}"
+            }
+        }
+    ]
+}

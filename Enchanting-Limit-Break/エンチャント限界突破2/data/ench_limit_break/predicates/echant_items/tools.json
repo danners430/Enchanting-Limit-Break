@@ -1,0 +1,25 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "ench_limit_break:echant_items/hoe"
+        },
+        {
+            "condition": "reference",
+            "name": "ench_limit_break:echant_items/pickaxe"
+        },
+        {
+            "condition": "reference",
+            "name": "ench_limit_break:echant_items/shovel"
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:shears\"}}"
+            }
+        }
+    ]
+}
