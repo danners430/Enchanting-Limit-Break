@@ -24,8 +24,14 @@ execute store result score @s PowerLevel run data get entity @s SelectedItem.tag
 # Power1000(1000) / levelAmp = denominator
 # Base100/denominator = BaseAdd
 # Base + BaseAdd = ArrowPower
+
+# ench_level + 1
 scoreboard players add @s PowerLevel 1
+# 25 * (ench_level + 1)
 scoreboard players operation @s PowerLevel *= Amplifier PowerAmplifier
+# 10000 / 25 * (ench_level + 1)
 scoreboard players operation @s Power10000 /= @s PowerLevel
+# 2000 / ( 10000 / 25 * (ench_level + 1) )
 scoreboard players operation @s PowerBase1000 /= @s Power10000
+# 20 + 2000 / ( 10000 / 25 * (ench_level + 1) )
 scoreboard players operation @s PowerBase += @s PowerBase1000
