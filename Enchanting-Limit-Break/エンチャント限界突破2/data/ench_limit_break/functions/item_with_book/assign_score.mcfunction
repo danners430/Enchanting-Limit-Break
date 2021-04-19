@@ -13,8 +13,7 @@ execute store result score @s[tag=SwordEnch] Looting run data get entity @s Item
 execute store result score @s[tag=FishingRodEnch] LuckOfTheSea run data get entity @s Item.tag.Enchantments[{id:"minecraft:luck_of_the_sea"}].lvl
 execute store result score @s[tag=FishingRodEnch] Lure run data get entity @s Item.tag.Enchantments[{id:"minecraft:lure"}].lvl
 execute store result score @s[tag=CrossbowEnch] Piercing run data get entity @s Item.tag.Enchantments[{id:"minecraft:piercing"}].lvl
-execute store result score @s[tag=BowEnch] Power run data get entity @s Item.tag.Enchantments[{id:"minecraft:power"}].lvl
-execute store result score @s[tag=CrossbowEnch] Power run data get entity @s Item.tag.Enchantments[{id:"minecraft:power"}].lvl
+execute store result score @s[tag=BowEnch,predicate=ench_limit_break:bow_or_crossbow] Power run data get entity @s Item.tag.Enchantments[{id:"minecraft:power"}].lvl
 execute store result score @s[tag=ArmorEnch] P.Protection run data get entity @s Item.tag.Enchantments[{id:"minecraft:projectile_protection"}].lvl
 execute store result score @s[tag=ArmorEnch] Protection run data get entity @s Item.tag.Enchantments[{id:"minecraft:protection"}].lvl
 execute store result score @s[tag=BowEnch] Punch run data get entity @s Item.tag.Enchantments[{id:"minecraft:punch"}].lvl
@@ -33,10 +32,8 @@ execute store result score @s[tag=TridentEnch] Riptide run data get entity @s It
 execute store result score @s[tag=SwordEnch,tag=!AxeEnch] Sweeping run data get entity @s Item.tag.Enchantments[{id:"minecraft:sweeping"}].lvl
 execute store result score @s[tag=HelmetEnch] AquaAffinity run data get entity @s Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}].lvl
 execute store result score @s[tag=TridentEnch] Channeling run data get entity @s Item.tag.Enchantments[{id:"minecraft:channeling"}].lvl
-execute store result score @s[tag=BowEnch] Flame run data get entity @s Item.tag.Enchantments[{id:"minecraft:flame"}].lvl
-execute store result score @s[tag=CrossbowEnch] Flame run data get entity @s Item.tag.Enchantments[{id:"minecraft:flame"}].lvl
-execute store result score @s[tag=BowEnch] Infinity run data get entity @s Item.tag.Enchantments[{id:"minecraft:infinity"}].lvl
-execute store result score @s[tag=CrossbowEnch] Infinity run data get entity @s Item.tag.Enchantments[{id:"minecraft:infinity"}].lvl
+execute store result score @s[predicate=ench_limit_break:bow_or_crossbow] Flame run data get entity @s Item.tag.Enchantments[{id:"minecraft:flame"}].lvl
+execute store result score @s[predicate=ench_limit_break:bow_or_crossbow] Infinity run data get entity @s Item.tag.Enchantments[{id:"minecraft:infinity"}].lvl
 execute store result score @s[tag=MiscEnch] Mending run data get entity @s Item.tag.Enchantments[{id:"minecraft:mending"}].lvl
 execute store result score @s[tag=CrossbowEnch] Multishot run data get entity @s Item.tag.Enchantments[{id:"minecraft:multishot"}].lvl
 execute store result score @s[tag=ToolEnch] SilkTouch run data get entity @s Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl
@@ -74,8 +71,6 @@ execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscE
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:aqua_affinity"}]}}}] AquaAffinity run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:aqua_affinity"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:channeling"}]}}}] Channeling run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:channeling"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:flame"}]}}}] Flame run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:flame"}].lvl
-execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:flame"}]}}}] Flame run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:flame"}].lvl
-execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:infinity"}]}}}] Infinity run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:infinity"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:infinity"}]}}}] Infinity run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:infinity"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:mending"}]}}}] Mending run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:mending"}].lvl
 execute as @e[nbt={Item:{id:"minecraft:enchanted_book"}}] if entity @e[tag=MiscEnch,distance=..1] store result score @s[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:multishot"}]}}}] Multishot run data get entity @s Item.tag.StoredEnchantments[{id:"minecraft:multishot"}].lvl
