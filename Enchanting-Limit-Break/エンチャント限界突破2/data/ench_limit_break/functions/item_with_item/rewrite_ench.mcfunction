@@ -103,14 +103,14 @@ execute as @s[tag=SwordEnch,tag=!AxeEnch] if score @s Sweeping matches 0 if enti
 execute as @s[tag=HelmetEnch] if score @s AquaAffinity matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:aqua_affinity"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=TridentEnch] if score @s Channeling matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:channeling"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[predicate=ench_limit_break:bow_or_crossbow] if score @s Flame matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:flame"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
-execute as @s[tag=BowEnch,predicate=ench_limit_break:bow_or_crossbow] if score @s Infinity matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:infinity"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
+execute as @s[predicate=ench_limit_break:bow_or_crossbow] if score @s Infinity matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:infinity"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=MiscEnch] if score @s Mending matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:mending"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=CrossbowEnch] if score @s Multishot matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:multishot"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=ToolEnch] if score @s SilkTouch matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:silk_touch"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 execute as @s[tag=BootsEnch] if score @s SoulSpeed matches 0 if entity @e[nbt={Item:{tag:{Enchantments:[{id:"minecraft:soul_speed"}]}}},distance=0.001..1,tag=!ench_item] run tag @s add Enchanted
 
 execute as @e[tag=Enchanted,tag=MiscEnch,tag=ench_item] at @s run function ench_limit_break:success
-execute as @s[tag=Enchanted,tag=MiscEnch,tag=ench_item] run kill @e[nbt={Item:{tag:{Enchantments:[{}]}}},limit=1,sort=nearest,distance=0.001..1,tag=!ench_item]
+execute as @s[tag=Enchanted,tag=MiscEnch,tag=ench_item] run kill @e[distance=0.001..1,tag=SourceItem]
 
 scoreboard players reset @e[type=item] BaneOfArthropods
 scoreboard players reset @e[type=item] BlastProtection
