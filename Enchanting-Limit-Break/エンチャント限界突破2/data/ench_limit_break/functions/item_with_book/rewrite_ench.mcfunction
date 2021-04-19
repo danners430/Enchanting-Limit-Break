@@ -110,7 +110,7 @@ execute as @s[tag=ToolEnch] if score @s SilkTouch matches 0 if entity @e[nbt={It
 execute as @s[tag=BootsEnch] if score @s SoulSpeed matches 0 if entity @e[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:soul_speed"}]}}},distance=0.001..1] run tag @s add Enchanted
 
 execute as @e[tag=Enchanted,tag=MiscEnch] at @s run function ench_limit_break:success
-execute as @s[tag=Enchanted,tag=MiscEnch] run kill @e[nbt={Item:{tag:{StoredEnchantments:[{}]}}},limit=1,sort=nearest,distance=0.0001..1,tag=!ench_item]
+execute as @s[tag=Enchanted,tag=MiscEnch] run kill @e[distance=0.0001..1,tag=SourceBook]
 
 scoreboard players reset @e[type=item] BaneOfArthropods
 scoreboard players reset @e[type=item] BlastProtection
