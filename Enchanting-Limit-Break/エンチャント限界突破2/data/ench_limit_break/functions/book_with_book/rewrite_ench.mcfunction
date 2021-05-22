@@ -15,7 +15,7 @@ execute store result entity @s[scores={P.Protection=1..}] Item.tag.StoredEnchant
 execute store result entity @s[scores={Protection=1..}] Item.tag.StoredEnchantments[{id:"minecraft:protection"}].lvl short 1 if score @s Protection <= MaxLevel Protection run scoreboard players get @s Protection
 execute store result entity @s[scores={Punch=1..}] Item.tag.StoredEnchantments[{id:"minecraft:punch"}].lvl short 1 if score @s Punch <= MaxLevel Punch run scoreboard players get @s Punch
 execute store result entity @s[scores={QuickCharge=1..}] Item.tag.StoredEnchantments[{id:"minecraft:quick_charge"}].lvl short 1 if score @s QuickCharge <= MaxLevel QuickCharge run scoreboard players get @s QuickCharge
-execute store result entity @s[scores={Respiration=1..}] Item.tag.StoredEnchantments[{id:"minecraft:respiration"}].lvl short 1 if score s Respiration <= MaxLevel Respiration run scoreboard players get @s Respiration
+execute store result entity @s[scores={Respiration=1..}] Item.tag.StoredEnchantments[{id:"minecraft:respiration"}].lvl short 1 if score @s Respiration <= MaxLevel Respiration run scoreboard players get @s Respiration
 execute store result entity @s[scores={Sharpness=1..}] Item.tag.StoredEnchantments[{id:"minecraft:sharpness"}].lvl short 1 if score @s Sharpness <= MaxLevel Sharpness run scoreboard players get @s Sharpness
 execute store result entity @s[scores={Smite=1..}] Item.tag.StoredEnchantments[{id:"minecraft:smite"}].lvl short 1 if score @s Smite <= MaxLevel Smite run scoreboard players get @s Smite
 execute store result entity @s[scores={Thorns=1..}] Item.tag.StoredEnchantments[{id:"minecraft:thorns"}].lvl short 1 if score @s Thorns <= MaxLevel Thorns run scoreboard players get @s Thorns
