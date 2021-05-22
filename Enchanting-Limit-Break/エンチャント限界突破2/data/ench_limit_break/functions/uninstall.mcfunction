@@ -35,3 +35,11 @@ scoreboard objectives remove Multishot
 scoreboard objectives remove SilkTouch
 scoreboard objectives remove SoulSpeed
 scoreboard objectives remove CheckItems
+scoreboard objectives remove TridentThrown
+scoreboard objectives remove Walked
+scoreboard objectives remove Run
+scoreboard objectives remove PowerBase
+scoreboard objectives remove Power10000
+scoreboard objectives remove PowerAmplifier
+scoreboard objectives remove PowerBase1000
+scoreboard objectives remove PowerLevel
