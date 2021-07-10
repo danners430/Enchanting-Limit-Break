@@ -23,7 +23,7 @@
                                 "predicate": {
                                     "equipment": {
                                         "mainhand": {
-                                            "item": "trident",
+                                            "items": ["trident"],
                                             "enchantments": [
                                                 {
                                                     "enchantment": "sharpness"
@@ -39,7 +39,7 @@
                                 "predicate": {
                                     "equipment": {
                                         "offhand": {
-                                            "item": "trident",
+                                            "items": ["trident"],
                                             "enchantments": [
                                                 {
                                                     "enchantment": "sharpness"
