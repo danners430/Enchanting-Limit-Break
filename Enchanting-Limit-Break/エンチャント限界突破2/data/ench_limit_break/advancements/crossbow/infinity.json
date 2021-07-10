@@ -1,0 +1,52 @@
+{
+  "criteria": {
+    "shot_crossbow": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:crossbow"]
+        },
+        "player": [
+          {
+            "condition": "alternative",
+            "terms": [
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:infinity"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:infinity"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": { "function": "ench_limit_break:advancements/crossbow/infinity" }
+}

@@ -1,0 +1,57 @@
+{
+    "criteria": {
+      "shot_crossbow": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "damage": {
+            "type": {
+              "is_projectile": true,
+              "direct_entity": {
+                "type": "#minecraft:arrows"
+              }
+            }
+          },
+          "player": [
+              {
+                  "condition": "alternative",
+                  "terms": [
+                      {
+                          "condition": "entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                              "equipment": {
+                                  "mainhand": {
+                                      "items": ["minecraft:crossbow"],
+                                      "enchantments": [
+                                          {
+                                              "enchantment": "minecraft:flame"
+                                          }
+                                      ]
+                                  }
+                              }
+                          }
+                      },
+                      {
+                          "condition": "entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                              "equipment": {
+                                  "offhand": {
+                                      "items": ["minecraft:crossbow"],
+                                      "enchantments": [
+                                          {
+                                              "enchantment": "minecraft:flame"
+                                          }
+                                      ]
+                                  }
+                              }
+                          }
+                      }
+                  ]
+              }
+          ]
+        }
+      }
+    },
+    "rewards": {"function": "ench_limit_break:advancements/crossbow/hit_mob"}
+  }
