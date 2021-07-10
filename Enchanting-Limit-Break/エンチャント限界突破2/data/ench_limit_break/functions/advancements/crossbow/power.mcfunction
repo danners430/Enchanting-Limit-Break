@@ -16,13 +16,3 @@ scoreboard players reset @s PowerLevel
 scoreboard players reset @s Power10000
 scoreboard players reset @s PowerBase1000
 scoreboard players reset @s PowerBase
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:1s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 3d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:2s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 3.5d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:3s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 4d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:4s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 4.5d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:5s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 5d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:6s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 5.5d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:7s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 6d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:8s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 6.5d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:9s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 7d
-# execute as @e[type=minecraft:arrow,nbt={inGround:0b}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:crossbow",tag:{Enchantments:[{lvl:10s,id:"minecraft:power"}]}}}] run data modify entity @s damage set value 7.5d
