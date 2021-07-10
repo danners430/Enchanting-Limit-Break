@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "criteria": {
     "shot_crossbow": {
@@ -49,4 +50,57 @@
     }
   },
   "rewards": { "function": "ench_limit_break:advancements/crossbow/power" }
+=======
+{
+  "criteria": {
+    "shot_crossbow": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:crossbow"]
+        },
+        "player": [
+          {
+            "condition": "alternative",
+            "terms": [
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:power"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:power"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": { "function": "ench_limit_break:advancements/crossbow/power" }
+>>>>>>> 937be23b1549b1306419d05578a3d866014db0fe
 }

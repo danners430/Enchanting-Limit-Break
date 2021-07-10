@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "criteria": {
     "shot_trident": {
@@ -21,4 +22,29 @@
     ]
   ],
   "rewards": {"function": "ench_limit_break:advancements/trident/summon_lightning"}
+=======
+{
+  "criteria": {
+    "shot_trident": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_projectile": true,
+            "direct_entity": {
+              "type": "minecraft:trident",
+              "nbt": "{Trident:{id:\"minecraft:trident\",tag:{Enchantments:[{id:\"minecraft:channeling\",lvl:2s}]}}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shot_trident"
+    ]
+  ],
+  "rewards": {"function": "ench_limit_break:advancements/trident/summon_lightning"}
+>>>>>>> 937be23b1549b1306419d05578a3d866014db0fe
 }
