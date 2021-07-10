@@ -4,7 +4,7 @@
       "trigger": "minecraft:shot_crossbow",
       "conditions": {
         "item": {
-          "item": "minecraft:crossbow"
+          "items": ["minecraft:crossbow"]
         },
         "player": [
           {
@@ -16,8 +16,12 @@
                 "predicate": {
                   "equipment": {
                     "mainhand": {
-                      "item": "minecraft:crossbow",
-                      "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:flame\"}]}"
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:infinity"
+                        }
+                      ]
                     }
                   }
                 }
@@ -28,8 +32,12 @@
                 "predicate": {
                   "equipment": {
                     "offhand": {
-                      "item": "minecraft:crossbow",
-                      "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:flame\"}]}"
+                      "items": ["minecraft:crossbow"],
+                      "enchantments": [
+                        {
+                          "enchantment": "minecraft:infinity"
+                        }
+                      ]
                     }
                   }
                 }
@@ -40,5 +48,5 @@
       }
     }
   },
-  "rewards": { "function": "ench_limit_break:advancements/crossbow/flame" }
+  "rewards": { "function": "ench_limit_break:advancements/crossbow/infinity" }
 }

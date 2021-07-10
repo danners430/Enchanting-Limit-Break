@@ -21,7 +21,7 @@
                           "predicate": {
                               "equipment": {
                                   "mainhand": {
-                                      "item": "minecraft:crossbow",
+                                      "items": ["minecraft:crossbow"],
                                       "enchantments": [
                                           {
                                               "enchantment": "minecraft:flame"
@@ -37,7 +37,7 @@
                           "predicate": {
                               "equipment": {
                                   "offhand": {
-                                      "item": "minecraft:crossbow",
+                                      "items": ["minecraft:crossbow"],
                                       "enchantments": [
                                           {
                                               "enchantment": "minecraft:flame"
@@ -53,5 +53,5 @@
         }
       }
     },
-    "rewards": {"function": "ench_limit_break:advancements/hit_mob"}
+    "rewards": {"function": "ench_limit_break:advancements/crossbow/hit_mob"}
   }
