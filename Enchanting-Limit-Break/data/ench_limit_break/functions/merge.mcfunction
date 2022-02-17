@@ -1,0 +1,3 @@
+execute if entity @s[tag=ench_to] at @s if entity @e[distance=..1,nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to,type=item] run function ench_limit_break:book_with_book/assign_score
+execute if entity @s[nbt=!{Item:{id:"minecraft:enchanted_book"}},type=item] if entity @e[distance=..1,nbt={Item:{id:"minecraft:enchanted_book"}},type=item] run function ench_limit_break:item_with_book/assign_score
+execute if entity @s[tag=ench_item] if entity @e[distance=..1,tag=!ench_item] run function ench_limit_break:item_with_item/assign_score

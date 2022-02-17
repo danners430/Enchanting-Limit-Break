@@ -1,0 +1,1 @@
+execute if entity @e[type=minecraft:trident,distance=..8] run function ench_limit_break:advancements/trident/sharpness

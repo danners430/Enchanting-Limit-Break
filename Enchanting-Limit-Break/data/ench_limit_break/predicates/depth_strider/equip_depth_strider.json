@@ -1,0 +1,33 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level4"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level5"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level6"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level7"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level8"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level9"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "ench_limit_break:depth_strider/level10"
+        }
+    ]
+}

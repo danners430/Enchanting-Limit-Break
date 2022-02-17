@@ -1,0 +1,53 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:leather_leggings\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:chainmail_leggings\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:iron_leggings\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:golden_leggings\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:diamond_leggings\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:netherite_leggings\"}}"
+            }
+        }
+    ]
+}

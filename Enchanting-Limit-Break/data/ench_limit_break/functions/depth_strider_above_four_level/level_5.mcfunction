@@ -1,0 +1,2 @@
+execute as @a[predicate=ench_limit_break:depth_strider/level5,predicate=ench_limit_break:in_water] at @s run attribute @s generic.movement_speed modifier add 4e2a76b7-9f80-4040-89c4-29cacace225a "AddWaterMovementSpeed" 0.06 add
+execute as @a[predicate=!ench_limit_break:depth_strider/level5,predicate=!ench_limit_break:in_water] at @s run attribute @s generic.movement_speed modifier remove 4e2a76b7-9f80-4040-89c4-29cacace225a

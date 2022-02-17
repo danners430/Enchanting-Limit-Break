@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "storage",
+        "source": "elb:test"
+    },
+    "ops": [
+        {
+            "op": "replace",
+            "target": "AttributeModifiers[{Name:\"DepthLevelModifiers\"}].Amount",
+            "source": "AttributeModifiers[{Name:\"DepthLevelModifiers\"}].Amount"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "shot_crossbow": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "item": "minecraft:crossbow"
+        },
+        "player": [
+          {
+            "condition": "alternative",
+            "terms": [
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "item": "minecraft:crossbow",
+                      "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:flame\"}]}"
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "item": "minecraft:crossbow",
+                      "nbt": "{Enchantments:[{lvl:1s,id:\"minecraft:flame\"}]}"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": { "function": "ench_limit_break:advancements/crossbow/flame" }
+}

@@ -1,0 +1,51 @@
+{
+    "criteria": {
+        "in_water": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "blocks": ["minecraft:water"]
+                    }
+                },
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "ench_limit_break:depth_strider/equip_depth_strider"
+                    },
+                    {
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "feet": {
+                                                "nbt": "{AttributeModifiers:[{Slot:\"feet\",Name:\"DepthLevelModifier\"}]}"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "equipment": {
+                                        "feet": {
+                                            "nbt": "{AttributeModifiers:[{Slot:\"feet\",AttributeName:\"minecraft:generic.movement_speed\",Amount:0s}]}"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {"function": "ench_limit_break:depth_strider_above_four_level/add_movement_speed"}
+}

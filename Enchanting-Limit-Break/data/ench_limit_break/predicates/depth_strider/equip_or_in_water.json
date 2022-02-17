@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:reference",
+                "name": "ench_limit_break:in_water"
+            }
+        }
+    ]
+}

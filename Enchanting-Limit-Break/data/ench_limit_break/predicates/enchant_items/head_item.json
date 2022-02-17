@@ -1,0 +1,61 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:carved_pumpkin\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:skeleton_skull\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:wither_skeleton_skull\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:zombie_head\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:creeper_head\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:player_head\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:dragon_head\"}}"
+            }
+        }
+    ]
+}

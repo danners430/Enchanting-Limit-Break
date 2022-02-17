@@ -1,0 +1,13 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "ench_limit_break:enchant_items/chestplate"
+        },
+        {
+            "condition": "reference",
+            "name": "ench_limit_break:enchant_items/leggings"
+        }
+    ]
+}

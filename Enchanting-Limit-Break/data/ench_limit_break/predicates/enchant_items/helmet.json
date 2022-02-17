@@ -1,0 +1,61 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:leather_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:chainmail_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:iron_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:golden_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:diamond_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:netherite_helmet\"}}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type": "item",
+                "nbt": "{Item:{id:\"minecraft:turtle_helmet\"}}"
+            }
+        }
+    ]
+}
