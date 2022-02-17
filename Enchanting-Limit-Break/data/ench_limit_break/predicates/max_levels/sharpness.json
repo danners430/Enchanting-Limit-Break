@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-        "DepthStrider": {
+        "Sharpness": {
             "min": 0,
             "max": {
                 "type": "minecraft:score",
@@ -10,7 +10,7 @@
                     "type": "minecraft:fixed",
                     "name": "MaxLevel"
                 },
-                "score": "DepthStrider",
+                "score": "Sharpness",
                 "scale": 1
             }
         }
