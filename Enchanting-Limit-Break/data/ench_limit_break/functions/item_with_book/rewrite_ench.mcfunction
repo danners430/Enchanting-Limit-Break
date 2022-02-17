@@ -1,75 +1,75 @@
-execute store result entity @s[scores={BaneOfArthropods=1..}] Item.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}].lvl short 1 if score @s BaneOfArthropods <= MaxLevel BaneOfArthropods run scoreboard players get @s BaneOfArthropods
-execute if data entity @s[tag=!Enchanted,scores={BaneOfArthropods=1..}] Item.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}] run tag @s add Enchanted
-execute store result entity @s[scores={BlastProtection=1..}] Item.tag.Enchantments[{id:"minecraft:blast_protection"}].lvl short 1 if score @s BlastProtection <= MaxLevel BlastProtection run scoreboard players get @s BlastProtection
-execute if data entity @s[tag=!Enchanted,scores={BlastProtection=1..}] Item.tag.Enchantments[{id:"minecraft:blast_protection"}] run tag @s add Enchanted
-execute store result entity @s[tag=!Enchanted,scores={Efficiency=1..}] Item.tag.Enchantments[{id:"minecraft:efficiency"}].lvl short 1 if score @s Efficiency <= MaxLevel Efficiency run scoreboard players get @s Efficiency
-execute if data entity @s[tag=!Enchanted,scores={Efficiency=1..}] Item.tag.Enchantments[{id:"minecraft:efficiency"}] run tag @s add Enchanted
-execute store result entity @s[scores={FeatherFalling=1..}] Item.tag.Enchantments[{id:"minecraft:feather_falling"}].lvl short 1 if score @s FeatherFalling <= MaxLevel FeatherFalling run scoreboard players get @s FeatherFalling
-execute if data entity @s[tag=!Enchanted,scores={FeatherFalling=1..}] Item.tag.Enchantments[{id:"minecraft:feather_falling"}] run tag @s add Enchanted
-execute store result entity @s[scores={FireProtection=1..}] Item.tag.Enchantments[{id:"minecraft:fire_protection"}].lvl short 1 if score @s FireProtection <= MaxLevel FireProtection run scoreboard players get @s FireProtection
-execute if data entity @s[tag=!Enchanted,scores={FireProtection=1..}] Item.tag.Enchantments[{id:"minecraft:fire_protection"}] run tag @s add Enchanted
-execute store result entity @s[scores={Fortune=1..}] Item.tag.Enchantments[{id:"minecraft:fortune"}].lvl short 1 if score @s Fortune <= MaxLevel Fortune run scoreboard players get @s Fortune
-execute if data entity @s[tag=!Enchanted,scores={Fortune=1..}] Item.tag.Enchantments[{id:"minecraft:fortune"}] run tag @s add Enchanted
-execute store result entity @s[scores={Impaling=1..,Riptide=..-1}] Item.tag.Enchantments[{id:"minecraft:impaling"}].lvl short 1 if score @s Impaling <= MaxLevel Impaling run scoreboard players get @s Impaling
-execute if data entity @s[tag=!Enchanted,scores={Impaling=1..,Riptide=..-1}] Item.tag.Enchantments[{id:"minecraft:impaling"}] run tag @s add Enchanted
-execute store result entity @s[scores={Knockback=1..}] Item.tag.Enchantments[{id:"minecraft:knockback"}].lvl short 1 if score @s Knockback <= MaxLevel Knockback run scoreboard players get @s Knockback
-execute if data entity @s[tag=!Enchanted,scores={Knockback=1..}] Item.tag.Enchantments[{id:"minecraft:knockback"}] run tag @s add Enchanted
-execute store result entity @s[scores={Looting=1..}] Item.tag.Enchantments[{id:"minecraft:looting"}].lvl short 1 if score @s Looting <= MaxLevel Looting run scoreboard players get @s Looting
-execute if data entity @s[tag=!Enchanted,scores={Looting=1..}] Item.tag.Enchantments[{id:"minecraft:looting"}] run tag @s add Enchanted
-execute store result entity @s[scores={LuckOfTheSea=1..}] Item.tag.Enchantments[{id:"minecraft:luck_of_the_sea"}].lvl short 1 if score @s LuckOfTheSea <= MaxLevel LuckOfTheSea run scoreboard players get @s LuckOfTheSea
-execute if data entity @s[tag=!Enchanted,scores={LuckOfTheSea=1..}] Item.tag.Enchantments[{id:"minecraft:luck_of_the_sea"}] run tag @s add Enchanted
-execute store result entity @s[scores={Lure=1..}] Item.tag.Enchantments[{id:"minecraft:lure"}].lvl short 1 if score @s Lure <= MaxLevel Lure run scoreboard players get @s Lure
-execute if data entity @s[tag=!Enchanted,scores={Lure=1..}] Item.tag.Enchantments[{id:"minecraft:lure"}] run tag @s add Enchanted
-execute store result entity @s[scores={Piercing=1..}] Item.tag.Enchantments[{id:"minecraft:piercing"}].lvl short 1 if score @s Piercing <= MaxLevel Piercing run scoreboard players get @s Piercing
-execute if data entity @s[tag=!Enchanted,scores={Piercing=1..}] Item.tag.Enchantments[{id:"minecraft:piercing"}] run tag @s add Enchanted
-execute store result entity @s[scores={Power=1..}] Item.tag.Enchantments[{id:"minecraft:power"}].lvl short 1 if score @s Power <= MaxLevel Power run scoreboard players get @s Power
-execute if data entity @s[tag=!Enchanted,scores={Power=1..}] Item.tag.Enchantments[{id:"minecraft:power"}] run tag @s add Enchanted
-execute store result entity @s[scores={P.Protection=1..}] Item.tag.Enchantments[{id:"minecraft:projectile_protection"}].lvl short 1 if score @s P.Protection <= MaxLevel P.Protection run scoreboard players get @s P.Protection
-execute if data entity @s[tag=!Enchanted,scores={P.Protection=1..}] Item.tag.Enchantments[{id:"minecraft:projectile_protection"}] run tag @s add Enchanted
-execute store result entity @s[scores={Protection=1..}] Item.tag.Enchantments[{id:"minecraft:protection"}].lvl short 1 if score @s Protection <= MaxLevel Protection run scoreboard players get @s Protection
-execute if data entity @s[tag=!Enchanted,scores={Protection=1..}] Item.tag.Enchantments[{id:"minecraft:protection"}] run tag @s add Enchanted
-execute store result entity @s[scores={Punch=1..}] Item.tag.Enchantments[{id:"minecraft:punch"}].lvl short 1 if score @s Punch <= MaxLevel Punch run scoreboard players get @s Punch
-execute if data entity @s[tag=!Enchanted,scores={Punch=1..}] Item.tag.Enchantments[{id:"minecraft:punch"}] run tag @s add Enchanted
-execute store result entity @s[scores={QuickCharge=1..}] Item.tag.Enchantments[{id:"minecraft:quick_charge"}].lvl short 1 if score @s QuickCharge <= MaxLevel QuickCharge run scoreboard players get @s QuickCharge
-execute if data entity @s[tag=!Enchanted,scores={QuickCharge=1..}] Item.tag.Enchantments[{id:"minecraft:quick_charge"}] run tag @s add Enchanted
-execute store result entity @s[scores={Respiration=1..}] Item.tag.Enchantments[{id:"minecraft:respiration"}].lvl short 1 if score @s Respiration <= MaxLevel Respiration run scoreboard players get @s Respiration
-execute if data entity @s[tag=!Enchanted,scores={Respiration=1..}] Item.tag.Enchantments[{id:"minecraft:respiration"}] run tag @s add Enchanted
-execute store result entity @s[scores={Sharpness=1..}] Item.tag.Enchantments[{id:"minecraft:sharpness"}].lvl short 1 if score @s Sharpness <= MaxLevel Sharpness run scoreboard players get @s Sharpness
-execute if data entity @s[tag=!Enchanted,scores={Sharpness=1..}] Item.tag.Enchantments[{id:"minecraft:sharpness"}] run tag @s add Enchanted
-execute store result entity @s[scores={Smite=1..}] Item.tag.Enchantments[{id:"minecraft:smite"}].lvl short 1 if score @s Smite <= MaxLevel Smite run scoreboard players get @s Smite
-execute if data entity @s[tag=!Enchanted,scores={Smite=1..}] Item.tag.Enchantments[{id:"minecraft:smite"}] run tag @s add Enchanted
-execute store result entity @s[scores={Thorns=1..}] Item.tag.Enchantments[{id:"minecraft:thorns"}].lvl short 1 if score @s Thorns <= MaxLevel Thorns run scoreboard players get @s Thorns
-execute if data entity @s[tag=!Enchanted,scores={Thorns=1..}] Item.tag.Enchantments[{id:"minecraft:thorns"}] run tag @s add Enchanted
-execute store result entity @s[scores={Unbreaking=1..}] Item.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl short 1 if score @s Unbreaking <= MaxLevel Unbreaking run scoreboard players get @s Unbreaking
-execute if data entity @s[tag=!Enchanted,scores={Unbreaking=1..}] Item.tag.Enchantments[{id:"minecraft:unbreaking"}] run tag @s add Enchanted
-execute store result entity @s[scores={DepthStrider=1..}] Item.tag.Enchantments[{id:"minecraft:depth_strider"}].lvl short 1 if score @s DepthStrider <= MaxLevel DepthStrider run scoreboard players get @s DepthStrider
-execute if data entity @s[tag=!Enchanted,scores={DepthStrider=1..}] Item.tag.Enchantments[{id:"minecraft:depth_strider"}] run tag @s add Enchanted
-execute store result entity @s[scores={FireAspect=1..}] Item.tag.Enchantments[{id:"minecraft:fire_aspect"}].lvl short 1 if score @s FireAspect <= MaxLevel FireAspect run scoreboard players get @s FireAspect
-execute if data entity @s[tag=!Enchanted,scores={FireAspect=1..}] Item.tag.Enchantments[{id:"minecraft:fire_aspect"}] run tag @s add Enchanted
-execute store result entity @s[scores={FrostWalker=1..}] Item.tag.Enchantments[{id:"minecraft:frost_walker"}].lvl short 1 if score @s FrostWalker <= MaxLevel FrostWalker run scoreboard players get @s FrostWalker
-execute if data entity @s[tag=!Enchanted,scores={FrostWalker=1..}] Item.tag.Enchantments[{id:"minecraft:frost_walker"}] run tag @s add Enchanted
-execute store result entity @s[scores={Loyalty=1..}] Item.tag.Enchantments[{id:"minecraft:loyalty"}].lvl short 1 if score @s Loyalty <= MaxLevel Loyalty run scoreboard players get @s Loyalty
-execute if data entity @s[tag=!Enchanted,scores={Loyalty=1..}] Item.tag.Enchantments[{id:"minecraft:loyalty"}] run tag @s add Enchanted
-execute store result entity @s[scores={Riptide=1..},predicate=!ench_limit_break:trident/except_riptide] Item.tag.Enchantments[{id:"minecraft:riptide"}].lvl short 1 if score @s Riptide <= MaxLevel Riptide run scoreboard players get @s Riptide
-execute if data entity @s[tag=!Enchanted,scores={Riptide=1..},predicate=!ench_limit_break:trident/except_riptide] Item.tag.Enchantments[{id:"minecraft:riptide"}] run tag @s add Enchanted
-execute store result entity @s[scores={Sweeping=1..}] Item.tag.Enchantments[{id:"minecraft:sweeping"}].lvl short 1 if score @s Sweeping <= MaxLevel Sweeping run scoreboard players get @s Sweeping
-execute if data entity @s[tag=!Enchanted,scores={Sweeping=1..}] Item.tag.Enchantments[{id:"minecraft:sweeping"}] run tag @s add Enchanted
-execute store result entity @s[scores={AquaAffinity=1..}] Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}].lvl short 1 if score @s AquaAffinity <= MaxLevel AquaAffinity run scoreboard players get @s AquaAffinity
-execute if data entity @s[tag=!Enchanted,scores={AquaAffinity=1..}] Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}] run tag @s add Enchanted
-execute store result entity @s[scores={Channeling=1..,Riptide=..-1}] Item.tag.Enchantments[{id:"minecraft:channeling"}].lvl short 1 if score @s Channeling <= MaxLevel Channeling run scoreboard players get @s Channeling
-execute if data entity @s[tag=!Enchanted,scores={Channeling=1..,Riptide=..-1}] Item.tag.Enchantments[{id:"minecraft:channeling"}] run tag @s add Enchanted
-execute store result entity @s[scores={Flame=1..}] Item.tag.Enchantments[{id:"minecraft:flame"}].lvl short 1 if score @s Flame <= MaxLevel Flame run scoreboard players get @s Flame
-execute if data entity @s[tag=!Enchanted,scores={Flame=1..}] Item.tag.Enchantments[{id:"minecraft:flame"}] run tag @s add Enchanted
-execute store result entity @s[scores={Infinity=1..}] Item.tag.Enchantments[{id:"minecraft:infinity"}].lvl short 1 if score @s Infinity <= MaxLevel Infinity run scoreboard players get @s Infinity
-execute if data entity @s[tag=!Enchanted,scores={Infinity=1..}] Item.tag.Enchantments[{id:"minecraft:infinity"}] run tag @s add Enchanted
-execute store result entity @s[scores={Mending=1..}] Item.tag.Enchantments[{id:"minecraft:mending"}].lvl short 1 if score @s Mending <= MaxLevel Mending run scoreboard players get @s Mending
-execute if data entity @s[tag=!Enchanted,scores={Mending=1..}] Item.tag.Enchantments[{id:"minecraft:mending"}] run tag @s add Enchanted
-execute store result entity @s[scores={Multishot=1..}] Item.tag.Enchantments[{id:"minecraft:multishot"}].lvl short 1 if score @s Multishot <= MaxLevel Multishot run scoreboard players get @s Multishot
-execute if data entity @s[tag=!Enchanted,scores={Multishot=1..}] Item.tag.Enchantments[{id:"minecraft:multishot"}] run tag @s add Enchanted
-execute store result entity @s[scores={SilkTouch=1..}] Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl short 1 if score @s SilkTouch <= MaxLevel SilkTouch run scoreboard players get @s SilkTouch
-execute if data entity @s[tag=!Enchanted,scores={SilkTouch=1..}] Item.tag.Enchantments[{id:"minecraft:silk_touch"}] run tag @s add Enchanted
-execute store result entity @s[scores={SoulSpeed=1..}] Item.tag.Enchantments[{id:"minecraft:soul_speed"}].lvl short 1 if score @s SoulSpeed <= MaxLevel SoulSpeed run scoreboard players get @s SoulSpeed
-execute if data entity @s[tag=!Enchanted,scores={SoulSpeed=1..}] Item.tag.Enchantments[{id:"minecraft:soul_speed"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/bane_of_arthropods] Item.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}].lvl short 1 run scoreboard players get @s BaneOfArthropods
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/bane_of_arthropods] Item.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/blast_protection] Item.tag.Enchantments[{id:"minecraft:blast_protection"}].lvl short 1 run scoreboard players get @s BlastProtection
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/blast_protection] Item.tag.Enchantments[{id:"minecraft:blast_protection"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/efficiency] Item.tag.Enchantments[{id:"minecraft:efficiency"}].lvl short 1 run scoreboard players get @s Efficiency
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/efficiency] Item.tag.Enchantments[{id:"minecraft:efficiency"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/feather_falling] Item.tag.Enchantments[{id:"minecraft:feather_falling"}].lvl short 1 run scoreboard players get @s FeatherFalling
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/feather_falling] Item.tag.Enchantments[{id:"minecraft:feather_falling"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/fire_protection] Item.tag.Enchantments[{id:"minecraft:fire_protection"}].lvl short 1 run scoreboard players get @s FireProtection
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/fire_protection] Item.tag.Enchantments[{id:"minecraft:fire_protection"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/fortune] Item.tag.Enchantments[{id:"minecraft:fortune"}].lvl short 1 run scoreboard players get @s Fortune
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/fortune] Item.tag.Enchantments[{id:"minecraft:fortune"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/impaling,predicate=ench_limit_break:not_riptide] Item.tag.Enchantments[{id:"minecraft:impaling"}].lvl short 1 run scoreboard players get @s Impaling
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/impaling,predicate=ench_limit_break:not_riptide] Item.tag.Enchantments[{id:"minecraft:impaling"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/knockback] Item.tag.Enchantments[{id:"minecraft:knockback"}].lvl short 1 run scoreboard players get @s Knockback
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/knockback] Item.tag.Enchantments[{id:"minecraft:knockback"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/looting] Item.tag.Enchantments[{id:"minecraft:looting"}].lvl short 1 run scoreboard players get @s Looting
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/looting] Item.tag.Enchantments[{id:"minecraft:looting"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/luck_of_the_sea] Item.tag.Enchantments[{id:"minecraft:luck_of_the_sea"}].lvl short 1 run scoreboard players get @s LuckOfTheSea
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/luck_of_the_sea] Item.tag.Enchantments[{id:"minecraft:luck_of_the_sea"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/lure] Item.tag.Enchantments[{id:"minecraft:lure"}].lvl short 1 run scoreboard players get @s Lure
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/lure] Item.tag.Enchantments[{id:"minecraft:lure"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/piercing] Item.tag.Enchantments[{id:"minecraft:piercing"}].lvl short 1 run scoreboard players get @s Piercing
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/piercing] Item.tag.Enchantments[{id:"minecraft:piercing"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/power] Item.tag.Enchantments[{id:"minecraft:power"}].lvl short 1 run scoreboard players get @s Power
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/power] Item.tag.Enchantments[{id:"minecraft:power"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/projectile_protection] Item.tag.Enchantments[{id:"minecraft:projectile_protection"}].lvl short 1 run scoreboard players get @s P.Protection
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/projectile_protection] Item.tag.Enchantments[{id:"minecraft:projectile_protection"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/protection] Item.tag.Enchantments[{id:"minecraft:protection"}].lvl short 1 run scoreboard players get @s Protection
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/protection] Item.tag.Enchantments[{id:"minecraft:protection"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/punch] Item.tag.Enchantments[{id:"minecraft:punch"}].lvl short 1 run scoreboard players get @s Punch
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/punch] Item.tag.Enchantments[{id:"minecraft:punch"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/quick_charge] Item.tag.Enchantments[{id:"minecraft:quick_charge"}].lvl short 1 run scoreboard players get @s QuickCharge
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/quick_charge] Item.tag.Enchantments[{id:"minecraft:quick_charge"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/respiration] Item.tag.Enchantments[{id:"minecraft:respiration"}].lvl short 1 run scoreboard players get @s Respiration
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/respiration] Item.tag.Enchantments[{id:"minecraft:respiration"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/sharpness] Item.tag.Enchantments[{id:"minecraft:sharpness"}].lvl short 1 run scoreboard players get @s Sharpness
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/sharpness] Item.tag.Enchantments[{id:"minecraft:sharpness"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/smite] Item.tag.Enchantments[{id:"minecraft:smite"}].lvl short 1 run scoreboard players get @s Smite
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/smite] Item.tag.Enchantments[{id:"minecraft:smite"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/thorns] Item.tag.Enchantments[{id:"minecraft:thorns"}].lvl short 1 run scoreboard players get @s Thorns
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/thorns] Item.tag.Enchantments[{id:"minecraft:thorns"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/unbreaking] Item.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl short 1 run scoreboard players get @s Unbreaking
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/unbreaking] Item.tag.Enchantments[{id:"minecraft:unbreaking"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/depth_strider] Item.tag.Enchantments[{id:"minecraft:depth_strider"}].lvl short 1 run scoreboard players get @s DepthStrider
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/depth_strider] Item.tag.Enchantments[{id:"minecraft:depth_strider"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/fire_aspect] Item.tag.Enchantments[{id:"minecraft:fire_aspect"}].lvl short 1 run scoreboard players get @s FireAspect
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/fire_aspect] Item.tag.Enchantments[{id:"minecraft:fire_aspect"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/frost_walker] Item.tag.Enchantments[{id:"minecraft:frost_walker"}].lvl short 1 run scoreboard players get @s FrostWalker
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/frost_walker] Item.tag.Enchantments[{id:"minecraft:frost_walker"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/loyalty] Item.tag.Enchantments[{id:"minecraft:loyalty"}].lvl short 1 run scoreboard players get @s Loyalty
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/loyalty] Item.tag.Enchantments[{id:"minecraft:loyalty"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/riptide,predicate=!ench_limit_break:trident/except_riptide] Item.tag.Enchantments[{id:"minecraft:riptide"}].lvl short 1 run scoreboard players get @s Riptide
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/riptide,predicate=!ench_limit_break:trident/except_riptide] Item.tag.Enchantments[{id:"minecraft:riptide"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/sweeping] Item.tag.Enchantments[{id:"minecraft:sweeping"}].lvl short 1 run scoreboard players get @s Sweeping
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/sweeping] Item.tag.Enchantments[{id:"minecraft:sweeping"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/aqua_affinity] Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}].lvl short 1 run scoreboard players get @s AquaAffinity
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/aqua_affinity] Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/channeling,predicate=ench_limit_break:not_riptide] Item.tag.Enchantments[{id:"minecraft:channeling"}].lvl short 1 run scoreboard players get @s Channeling
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/channeling,predicate=ench_limit_break:not_riptide] Item.tag.Enchantments[{id:"minecraft:channeling"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/flame] Item.tag.Enchantments[{id:"minecraft:flame"}].lvl short 1 run scoreboard players get @s Flame
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/flame] Item.tag.Enchantments[{id:"minecraft:flame"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/infinity] Item.tag.Enchantments[{id:"minecraft:infinity"}].lvl short 1 run scoreboard players get @s Infinity
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/infinity] Item.tag.Enchantments[{id:"minecraft:infinity"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/mending] Item.tag.Enchantments[{id:"minecraft:mending"}].lvl short 1 run scoreboard players get @s Mending
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/mending] Item.tag.Enchantments[{id:"minecraft:mending"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/multishot] Item.tag.Enchantments[{id:"minecraft:multishot"}].lvl short 1 run scoreboard players get @s Multishot
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/multishot] Item.tag.Enchantments[{id:"minecraft:multishot"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/silk_touch] Item.tag.Enchantments[{id:"minecraft:silk_touch"}].lvl short 1 run scoreboard players get @s SilkTouch
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/silk_touch] Item.tag.Enchantments[{id:"minecraft:silk_touch"}] run tag @s add Enchanted
+execute store result entity @s[predicate=ench_limit_break:max_levels/soul_speed] Item.tag.Enchantments[{id:"minecraft:soul_speed"}].lvl short 1 run scoreboard players get @s SoulSpeed
+execute if data entity @s[tag=!Enchanted,predicate=ench_limit_break:max_levels/soul_speed] Item.tag.Enchantments[{id:"minecraft:soul_speed"}] run tag @s add Enchanted
 
 execute as @s[tag=SwordEnch] if score @s BaneOfArthropods matches 0 if entity @e[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:bane_of_arthropods"}]}}},distance=0.001..1] run tag @s add Enchanted
 execute as @s[tag=ArmorEnch] if score @s BlastProtection matches 0 if entity @e[nbt={Item:{tag:{StoredEnchantments:[{id:"minecraft:blast_protection"}]}}},distance=0.001..1] run tag @s add Enchanted
