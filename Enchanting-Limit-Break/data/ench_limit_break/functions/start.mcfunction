@@ -2,4 +2,4 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book"}},tag=!ench_to]
 execute as @e[tag=ench_to] at @s if block ~ ~-0.2 ~ #ench_limit_break:anvil run function ench_limit_break:merge
 execute as @e[type=item,nbt=!{Item:{id:"minecraft:enchanted_book"}}] at @s if block ~ ~-0.2 ~ #ench_limit_break:anvil if entity @e[type=item,nbt={Item:{tag:{StoredEnchantments:[{}]}}},distance=0.0001..1] run function ench_limit_break:item_with_book/tag_me
 execute as @e[type=item,nbt=!{Item:{id:"minecraft:enchanted_book"}},tag=!ench_item] at @s if block ~ ~-0.2 ~ #ench_limit_break:anvil if entity @e[type=item,nbt=!{Item:{id:"minecraft:enchanted_book"}},tag=!ench_item,distance=0.01..1.5] run tag @s add ench_item
-execute as @e[tag=ench_item] at @s if block ~ ~-0.2 ~ #ench_limit_break:anvil run function ench_limit_break:item_with_item/check_items
+execute as @e[type=item] at @s if block ~ ~-0.2 ~ #ench_limit_break:anvil run function ench_limit_break:item_with_item/check_items
