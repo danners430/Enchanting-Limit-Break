@@ -5,8 +5,23 @@
             "conditions": {
                 "player": [
                     {
-                        "condition": "minecraft:reference",
-                        "name": "ench_limit_break:depth_strider/equip_or_in_water"
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "location": {
+                                            "block": {
+                                                "blocks": ["minecraft:water"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
                     }
                 ]
             }
