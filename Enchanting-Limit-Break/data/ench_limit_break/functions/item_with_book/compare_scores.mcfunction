@@ -38,6 +38,7 @@ execute if score @s[predicate=ench_limit_break:max_levels/mending] Mending = @e[
 execute if score @s[predicate=ench_limit_break:max_levels/multishot] Multishot = @e[tag=SourceBook,limit=1] Multishot run scoreboard players add @s Multishot 1
 execute if score @s[predicate=ench_limit_break:max_levels/silk_touch] SilkTouch = @e[tag=SourceBook,limit=1] SilkTouch run scoreboard players add @s SilkTouch 1
 execute if score @s[predicate=ench_limit_break:max_levels/soul_speed] SoulSpeed = @e[tag=SourceBook,limit=1] SoulSpeed run scoreboard players add @s SoulSpeed 1
+execute if score @s[predicate=ench_limit_break:max_levels/swift_sneak] SwiftSneak = @e[tag=SourceBook,limit=1] SwiftSneak run scoreboard players add @s SwiftSneak 1
 
 # First item's score < Second item's score
 execute if score @s[predicate=ench_limit_break:max_levels/bane_of_arthropods] BaneOfArthropods < @e[tag=SourceBook,limit=1] BaneOfArthropods run scoreboard players operation @s BaneOfArthropods = @e[tag=SourceBook,limit=1] BaneOfArthropods
@@ -76,5 +77,6 @@ execute if score @s[predicate=ench_limit_break:max_levels/mending] Mending < @e[
 execute if score @s[predicate=ench_limit_break:max_levels/multishot] Multishot < @e[tag=SourceBook,limit=1] Multishot run scoreboard players operation @s Multishot = @e[tag=SourceBook,limit=1] Multishot
 execute if score @s[predicate=ench_limit_break:max_levels/silk_touch] SilkTouch < @e[tag=SourceBook,limit=1] SilkTouch run scoreboard players operation @s SilkTouch = @e[tag=SourceBook,limit=1] SilkTouch
 execute if score @s[predicate=ench_limit_break:max_levels/soul_speed] SoulSpeed < @e[tag=SourceBook,limit=1] SoulSpeed run scoreboard players operation @s SoulSpeed = @e[tag=SourceBook,limit=1] SoulSpeed
+execute if score @s[predicate=ench_limit_break:max_levels/swift_sneak] SwiftSneak < @e[tag=SourceBook,limit=1] SwiftSneak run scoreboard players operation @s SwiftSneak = @e[tag=SourceBook,limit=1] SwiftSneak
 
 function ench_limit_break:item_with_book/rewrite_ench
