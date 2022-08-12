@@ -1,0 +1,1 @@
+execute store result entity @s Item.tag.Enchantments[{id:"minecraft:aqua_affinity"}].lvl short 1 run scoreboard players get @s AquaAffinity
