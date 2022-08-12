@@ -34,6 +34,7 @@ scoreboard objectives add Mending dummy
 scoreboard objectives add Multishot dummy
 scoreboard objectives add SilkTouch dummy
 scoreboard objectives add SoulSpeed dummy
+scoreboard objectives add SwiftSneak dummy
 scoreboard objectives add CheckItems dummy
 scoreboard objectives add TridentThrown minecraft.used:minecraft.trident "ThrownTrident"
 scoreboard objectives add elbWalked minecraft.custom:minecraft.walk_one_cm
@@ -80,6 +81,7 @@ execute unless score MaxLevel SilkTouch = MaxLevel SilkTouch run scoreboard play
 execute unless score MaxLevel Smite = MaxLevel Smite run scoreboard players set MaxLevel Smite 10
 execute unless score MaxLevel SoulSpeed = MaxLevel SoulSpeed run scoreboard players set MaxLevel SoulSpeed 10
 execute unless score MaxLevel Sweeping = MaxLevel Sweeping run scoreboard players set MaxLevel Sweeping 3
+execute unless score MaxLevel SwiftSneak = MaxLevel SwiftSneak run scoreboard players set MaxLevel SwiftSneak 3
 execute unless score MaxLevel Thorns = MaxLevel Thorns run scoreboard players set MaxLevel Thorns 10
 execute unless score MaxLevel Unbreaking = MaxLevel Unbreaking run scoreboard players set MaxLevel Unbreaking 10
 
@@ -97,4 +99,5 @@ scoreboard players set Amplifier elbPowerAmplifier 25
 scoreboard players set elbConst3 elbConstant3 3
 
 # Set storage
-data modify storage ench_limit_break:attribute_modifiers AttributeModifiers set value []
+data merge storage ench_limit_break:attribute_modifiers_clear {Amount:0.0d}
+data merge storage ench_limit_break:attribute_modifiers {Amount:0.0d,AttributeName:"minecraft:generic.movement_speed",Slot:"feet",Operation:0,UUID:[I;0,0,0,0]}
