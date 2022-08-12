@@ -3,15 +3,32 @@
         "in_water": {
             "trigger": "minecraft:location",
             "conditions": {
-                "location": {
-                    "block": {
-                        "blocks": ["minecraft:water"]
-                    }
-                },
                 "player": [
                     {
-                        "condition": "minecraft:reference",
-                        "name": "ench_limit_break:depth_strider/equip_depth_strider"
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": ["minecraft:water"]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "feet": {
+                                    "enchantments": [
+                                        {
+                                            "levels": {
+                                                "min": 4
+                                            },
+                                            "enchantment": "minecraft:depth_strider"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
                     },
                     {
                         "condition": "minecraft:alternative",
@@ -36,7 +53,7 @@
                                 "predicate": {
                                     "equipment": {
                                         "feet": {
-                                            "nbt": "{AttributeModifiers:[{Slot:\"feet\",AttributeName:\"minecraft:generic.movement_speed\",Amount:0s}]}"
+                                            "nbt": "{AttributeModifiers:[{Slot:\"feet\",AttributeName:\"minecraft:generic.movement_speed\",Amount:0.0d}]}"
                                         }
                                     }
                                 }
