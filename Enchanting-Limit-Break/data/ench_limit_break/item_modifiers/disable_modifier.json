@@ -2,13 +2,13 @@
     "function": "copy_nbt",
     "ops": [
         {
-            "target": "AttributeModifiers",
+            "target": "AttributeModifiers[{Name:\"DepthLevelModifier\"}].Amount",
             "op": "replace",
-            "source": "AttributeModifiers"
+            "source": "Amount"
         }
     ],
     "source": {
         "type": "minecraft:storage",
-        "source": "ench_limit_break:attribute_modifiers"
+        "source": "ench_limit_break:attribute_modifiers_clear"
     }
 }
