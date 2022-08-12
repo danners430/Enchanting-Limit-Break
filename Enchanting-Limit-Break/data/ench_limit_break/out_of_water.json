@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "out_water": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:alternative",
+                        "terms": [
+                            {
+                                "condition": "minecraft:inverted",
+                                "term": {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "location": {
+                                            "block": {
+                                                "blocks": ["minecraft:water"]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {"function": "ench_limit_break:depth_strider_above_four_level/disable_modifier"}
+}
