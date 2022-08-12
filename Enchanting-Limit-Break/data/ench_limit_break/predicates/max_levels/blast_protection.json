@@ -1,18 +1,45 @@
 {
-    "condition": "minecraft:entity_scores",
-    "entity": "this",
-    "scores": {
-        "BlastProtection": {
-            "min": 0,
-            "max": {
-                "type": "minecraft:score",
-                "target": {
-                    "type": "minecraft:fixed",
-                    "name": "MaxLevel"
-                },
-                "score": "BlastProtection",
-                "scale": 1
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "BlastProtection": {
+                    "min": {
+                        "type": "minecraft:uniform",
+                        "min": 0,
+                        "max": 1
+                    },
+                    "max": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "MaxLevel"
+                        },
+                        "score": "BlastProtection",
+                        "scale": 1
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+                "BlastProtection": {
+                    "min": 1,
+                    "max": {
+                        "type": "minecraft:score",
+                        "target": {
+                            "type": "minecraft:fixed",
+                            "name": "MaxLevel"
+                        },
+                        "score": "BlastProtection",
+                        "scale": 1
+                    }
+                }
             }
         }
-    }
+    ]
 }

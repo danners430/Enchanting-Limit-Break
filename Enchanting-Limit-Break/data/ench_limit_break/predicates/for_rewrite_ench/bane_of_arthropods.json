@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "BaneOfArthropods": {
+            "min": 1,
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "MaxLevel"
+                },
+                "score": "BaneOfArthropods",
+                "scale": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+        "Lure": {
+            "min": 1,
+            "max": {
+                "type": "minecraft:score",
+                "target": {
+                    "type": "minecraft:fixed",
+                    "name": "MaxLevel"
+                },
+                "score": "Lure",
+                "scale": 1
+            }
+        }
+    }
+}

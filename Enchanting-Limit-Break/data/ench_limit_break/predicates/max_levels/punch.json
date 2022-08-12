@@ -3,7 +3,6 @@
     "entity": "this",
     "scores": {
         "Punch": {
-            "min": 0,
             "max": {
                 "type": "minecraft:score",
                 "target": {
