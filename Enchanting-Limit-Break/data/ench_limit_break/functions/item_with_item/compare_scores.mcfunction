@@ -1,6 +1,6 @@
 tag @e[nbt=!{Item:{id:"minecraft:enchanted_book"}},tag=!ench_item,distance=0.001..1,type=item] add SourceItem
 
-# 1つ目のアイテムのエンチャスコア == 2つ目のアイテムのエンチャスコア
+# 1st item's enchantment score == 2nd item's enchantment score
 execute if score @s[predicate=ench_limit_break:max_levels/bane_of_arthropods] BaneOfArthropods = @e[tag=SourceItem,distance=0.001..1,limit=1] BaneOfArthropods run scoreboard players add @s BaneOfArthropods 1
 execute if score @s[predicate=ench_limit_break:max_levels/blast_protection] BlastProtection = @e[tag=SourceItem,distance=0.001..1,limit=1] BlastProtection run scoreboard players add @s BlastProtection 1
 execute if score @s[predicate=ench_limit_break:max_levels/efficiency] Efficiency = @e[tag=SourceItem,distance=0.001..1,limit=1] Efficiency run scoreboard players add @s Efficiency 1
@@ -39,7 +39,7 @@ execute if score @s[predicate=ench_limit_break:max_levels/silk_touch] SilkTouch 
 execute if score @s[predicate=ench_limit_break:max_levels/soul_speed] SoulSpeed = @e[tag=SourceItem,distance=0.001..1,limit=1] SoulSpeed run scoreboard players add @s SoulSpeed 1
 execute if score @s[predicate=ench_limit_break:max_levels/swift_sneak] SwiftSneak = @e[tag=SourceItem,distance=0.001..1,limit=1] SwiftSneak run scoreboard players add @s SwiftSneak 1
 
-# 1つ目のアイテムのエンチャスコア < 2つ目のアイテムのエンチャスコア
+# 1st item's enchantment score < 2nd item's enchantment score
 execute if score @s[predicate=ench_limit_break:max_levels/bane_of_arthropods] BaneOfArthropods < @e[tag=SourceItem,distance=0.001..1,limit=1] BaneOfArthropods run scoreboard players operation @s BaneOfArthropods = @e[tag=SourceItem,distance=0.001..1,limit=1] BaneOfArthropods
 execute if score @s[predicate=ench_limit_break:max_levels/blast_protection] BlastProtection < @e[tag=SourceItem,distance=0.001..1,limit=1] BlastProtection run scoreboard players operation @s BlastProtection = @e[tag=SourceItem,distance=0.001..1,limit=1] BlastProtection
 execute if score @s[predicate=ench_limit_break:max_levels/efficiency] Efficiency < @e[tag=SourceItem,distance=0.001..1,limit=1] Efficiency run scoreboard players operation @s Efficiency = @e[tag=SourceItem,distance=0.001..1,limit=1] Efficiency
