@@ -12,7 +12,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:alternative",
+                  "condition": "minecraft:any_of",
                   "terms": [
                     {
                       "condition": "minecraft:match_tool",
@@ -46,7 +46,7 @@
                 },
                 {
                   "condition": "minecraft:table_bonus",
-                  "enchantment": "minecraft:elbFortune",
+                  "enchantment": "minecraft:fortune",
                   "chances": [
                     0.025,
                     0.027777778,
@@ -74,7 +74,7 @@
           "conditions": [
             {
               "condition": "minecraft:table_bonus",
-              "enchantment": "minecraft:elbFortune",
+              "enchantment": "minecraft:fortune",
               "chances": [
                 0.02,
                 0.022222223,
@@ -107,7 +107,7 @@
         {
           "condition": "minecraft:inverted",
           "term": {
-            "condition": "minecraft:alternative",
+            "condition": "minecraft:any_of",
             "terms": [
               {
                 "condition": "minecraft:match_tool",
