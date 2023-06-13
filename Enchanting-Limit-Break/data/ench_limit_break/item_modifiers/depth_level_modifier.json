@@ -1,14 +1,303 @@
-{
-    "function": "minecraft:copy_nbt",
-    "source": {
-        "type": "minecraft:storage",
-        "source": "ench_limit_break:attribute_modifiers"
+[
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "ench_limit_break:attribute_modifiers"
+        },
+        "ops": [
+            {
+                "op": "append",
+                "target": "AttributeModifiers[{Name:\"DepthLevelModifier\"}].Amount",
+                "source": "Amount"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "nbt": "{AttributeModifiers:[{Name:\"DepthLevelModifier\"}]}"
+                        }
+                    }
+                }
+            }
+        ]
     },
-    "ops": [
-        {
-            "op": "replace",
-            "target": "AttributeModifiers[{Name:\"DepthLevelModifier\"}].Amount",
-            "source": "Amount"
-        }
-    ]
-}
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "name": "DepthLevelModifier",
+                "slot": "feet",
+                "operation": "addition",
+                "amount": {
+                    "type": "minecraft:score",
+                    "score": "elbDepthStriderLevel",
+                    "scale": 0.03,
+                    "target": "this"
+                }
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{Name:\"DepthLevelModifier\"}]}"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "slot": "feet",
+                "operation": "addition",
+                "amount": 3,
+                "name": "NetheriteDefensePoint"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.armor\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": [
+                                "minecraft:netherite_boots",
+                                "minecraft:diamond_boots"
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor_toughness",
+                "slot": "feet",
+                "amount": 3,
+                "operation": "addition",
+                "name": "NetheriteArmorToughness"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.armor_toughness\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": ["minecraft:netherite_boots"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "amount": 0.1,
+                "slot": "feet",
+                "operation": "addition",
+                "name": "NetheriteKnockbackResistance"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.knockback_resistance\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": ["minecraft:netherite_boots"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor_toughness",
+                "slot": "feet",
+                "amount": 2,
+                "operation": "addition",
+                "name": "DiamondArmorToughness"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.armor_toughness\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": ["minecraft:diamond_boots"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "slot": "feet",
+                "operation": "addition",
+                "amount": 2,
+                "name": "IronDefensePoint"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.armor\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": ["minecraft:iron_boots"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_attributes",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "slot": "feet",
+                "operation": "addition",
+                "amount": 2,
+                "name": "ChainmailDefensePoint"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "equipment": {
+                            "feet": {
+                                "nbt": "{AttributeModifiers:[{AttributeName:\"minecraft:generic.armor\"}]}"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "feet": {
+                            "items": [
+                                "minecraft:chainmail_boots",
+                                "minecraft:leather_boots",
+                                "minecraft:golden_boots"
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -7,8 +7,8 @@
     "ops": [
         {
             "op": "replace",
-            "target": "AttributeModifiers[{Name:\"DepthLevelModifiers\"}].Amount",
-            "source": "AttributeModifiers[{Name:\"DepthLevelModifiers\"}].Amount"
+            "target": "AttributeModifiers[{Name:\"DepthLevelModifierA\"}]",
+            "source": "{}"
         }
     ]
 }

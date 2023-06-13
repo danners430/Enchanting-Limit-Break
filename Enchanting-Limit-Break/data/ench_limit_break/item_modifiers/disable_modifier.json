@@ -3,7 +3,7 @@
     "ops": [
         {
             "target": "AttributeModifiers[{Name:\"DepthLevelModifier\"}].Amount",
-            "op": "replace",
+            "op": "append",
             "source": "Amount"
         }
     ],
